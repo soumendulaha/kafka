@@ -1,1 +1,18 @@
 1.Install kafka
+2. cmd --> docker info
+Server should not be running
+
+Disable Docker Windows Service (Optional)
+============================================================
+Docker runs a background service called com.docker.service.
+If you want nothing Docker-related to run unless you open it manually:
+
+Press Windows + R, type:
+services.msc
+
+and press Enter.Find Docker Desktop Service or com.docker.service.Right-click → Properties.Change Startup type to Manual.Click OK.
+
+=================================================================================================================================
+
+once you do docker compose up, you should see  kafka1  | [2025-08-28 17:15:38,806] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
+And to check the container, go to cmd and do docker ps
